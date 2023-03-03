@@ -66,8 +66,8 @@ nav {
 
 .nav__flex {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
+        flex-wrap: wrap;
 }
 
 .nav__title {
@@ -82,8 +82,10 @@ nav {
 
 .footer__main {
   padding: 25px;
-/*   border-top: 3px solid #fff;
- */  box-shadow: 0 2px 8px rgb(229 229 228 / 25%), 0 5px 10px rgb(229 229 228 / 22%);
+box-shadow: 0 2px 8px rgb(229 229 228 / 25%), 0 5px 10px rgb(229 229 228 / 22%);
+ @media screen and (min-width: 1200px) { 
+ padding: 25px 100px;
+ }
 }
 
 .footer__menu-mb {
@@ -92,8 +94,9 @@ nav {
 
   @media screen and (min-width: 1200px) { 
 margin-top: 0px;
-justify-content: space-between;
-    width: 500px;
+justify-content: space-around;   
+ width: 500px;
+ margin-left: -40px;
 }
 }
 
