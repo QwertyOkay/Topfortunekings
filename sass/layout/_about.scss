@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200");
+
+#box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-family: "Raleway";
+  font-size: 2rem;
+  margin-top: 30px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*  width: 400px; */
+    color: white;
+    font-family: "Raleway";
+    font-size: 2.5rem;
+    margin-top: 0px;
+  }
+}
+.gradient-border {
+  border-radius: var(--borderWidth);
+}
+.gradient-border2 {
+  border-radius: var(--borderWidth);
+}
+
+.gradient-border3 {
+  --borderWidth: 3px;
+  background: #1d1f20;
+  /* position: relative; */
+  border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
+  z-index: -1;
+  // background-size: 300% 300%;
+}
+
+.return-h {
+  padding: 50px !important;
+  font-size: x-large !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-evenly !important;
+
+  @media screen and (min-width: 1200px) {
+    padding: 50px !important;
+    font-size: x-large !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-evenly !important;
+  }
+}
+
+.ret-mt {
+  margin-bottom: 30px;
+  font-weight: 600;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+  }
+}
+
+.padding-pp {
+  padding: 50px;
+  font-size: 16px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  @media screen and (min-width: 1200px) {
+    padding: 50px 250px;
+    font-size: 16px;
+  }
+}
+
+.padding-r {
+  @media screen and (min-width: 1200px) {
+    padding: 50px 250px;
+  }
+}
+
+.padding-cont {
+  padding: 30px;
+  color: #fff;
+  @media screen and (min-width: 1200px) {
+    padding: 50px 250px;
+  }
+}
+
+.padding-term {
+  padding: 30px;
+  font-size: 16px !important;
+  color: white;
+  margin-top: 30px;
+  @media screen and (min-width: 1200px) {
+    padding: 50px 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
+.padding-ab {
+  padding: 60px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    padding: 100px 250px;
+    font-size: 20px;
+  }
+}
