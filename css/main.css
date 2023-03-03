@@ -418,9 +418,10 @@ summary {
 }
 
 .price-prod2 {
-  color: #000;
-  font-weight: 600;
+  color: #feffd6;
+  font-weight: 500;
   font-size: xx-large;
+  text-align: center;
 }
 
 .heading-prod {
@@ -430,11 +431,15 @@ summary {
   justify-content: center;
   align-items: center;
   font-weight: 600;
+  text-align: center;
 }
 
 .heading-prod2 {
   font-size: xx-large;
   color: #fff;
+  font-weight: 600;
+  text-align: center;
+  padding-right: 0px;
 }
 
 .card-color {
@@ -840,6 +845,13 @@ body {
   font-weight: 800;
   color: #feffd6;
   text-transform: uppercase;
+}
+
+.prod__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 * {
@@ -1366,6 +1378,12 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .font-padding {
+    padding: 25px 120px;
   }
 }
 

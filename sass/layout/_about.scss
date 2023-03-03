@@ -137,3 +137,9 @@
     align-items: center;
   }
 }
+
+.font-padding {
+  @media screen and (min-width: 1200px) {
+  padding: 25px 120px;
+  }
+}
