@@ -757,11 +757,14 @@ body {
 }
 
 .header__box-item:hover {
-  background-color: rgba(249, 234, 225, 0.8901960784);
-  color: #232532;
-  padding: 0px 10px 0px;
+  /*   background-color: #f9eae1e3;
+   */
+  color: #e0eba5;
+  /*   padding: 0px 10px 0px;
+   */
   letter-spacing: 1.99px;
-  font-weight: 800;
+  /*   font-weight: 800;
+   */
   font-size: 22px;
 }
 
@@ -1138,10 +1141,12 @@ nav {
 }
 
 .link-3:hover {
-  background-color: rgba(249, 234, 225, 0.8901960784);
-  color: #232532;
-  padding: 15px 10px;
-  font-weight: 600;
+  /*     background-color: #f9eae1e3;
+   */
+  color: #e0eba5;
+  padding: 0px 10px;
+  /* font-weight: 600; */
+  transition: 0s;
 }
 
 .footer-active {
