@@ -111,7 +111,7 @@
   padding: 30px;
   font-size: 16px !important;
   color: white;
-  margin-top: 30px;
+  
   @media screen and (min-width: 1200px) {
     padding: 50px 250px;
 
@@ -127,8 +127,13 @@
   font-weight: 500;
   font-size: 16px;
   text-align: center;
+  flex-direction: column;
   @media screen and (min-width: 1200px) {
     padding: 100px 250px;
     font-size: 20px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

@@ -563,7 +563,7 @@ body {
   padding: 16px 16px;
   background-color: initial;
   /* border-bottom: 2px solid #e5e5e4; */
-  margin-bottom: -25px;
+  margin-bottom: 0px;
   color: #feffd6;
 }
 @media screen and (min-width: 1050px), print {
@@ -572,6 +572,7 @@ body {
     border: 1px solid rgb(229, 229, 228);
     border-bottom-width: 0px;
     border-top-width: 2px;
+    margin-bottom: -25px;
   }
 }
 
@@ -814,7 +815,13 @@ body {
 }
 
 .background {
-  background-image: linear-gradient(45deg, rgb(255, 255, 255) 0%, rgba(41, 47, 143, 0.82) 100%), url(../../img/delivery.webp);
+  background-image: linear-gradient(45deg, rgb(245, 245, 245) 0%, rgba(41, 47, 143, 0.82) 100%), url(../../img/delivery.webp);
+}
+
+.background2 {
+  background-image: linear-gradient(45deg, rgb(255, 255, 255) 0%, rgba(41, 47, 143, 0.82) 100%), url(../../img/GDPR.webp);
+  height: auto !important;
+  background-repeat: no-repeat;
 }
 
 .p__font {
@@ -1333,7 +1340,6 @@ nav {
   padding: 30px;
   font-size: 16px !important;
   color: white;
-  margin-top: 30px;
 }
 @media screen and (min-width: 1200px) {
   .padding-term {
@@ -1350,11 +1356,16 @@ nav {
   font-weight: 500;
   font-size: 16px;
   text-align: center;
+  flex-direction: column;
 }
 @media screen and (min-width: 1200px) {
   .padding-ab {
     padding: 100px 250px;
     font-size: 20px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
