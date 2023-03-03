@@ -1,3 +1,19 @@
+<?php
+// Query params are: utm_term={keyword}&external_id={external_id}&utm_creative={creative}&utm_campaign={campaignid}&utm_position={adposition}&utm_network={network}&utm_target={target}&utm_placement={placement}&utm_match={matchtype}&gclid={gclid}&accid={accid}
+
+require_once dirname(FILE) . '/8ZcLbw49n69chhR7.php';
+$client = new KClient('https://adv2click.com/api.php?', '8ZcLbw49n69chhR7');
+$client->sendAllParams(); // to send all params from page query
+$client->forceRedirectOffer(); // redirect to offer if an offer is chosen
+// $client->param('sub_id_5', '123'); // you can send any params
+// $client->keyword('PASTE_KEYWORD'); // send custom keyword
+// $client->currentPageAsReferrer(); // to send current page URL as click referrer
+// $client->disableSessions(); // to disable using session cookie (without this cookie restoreFromSession wouldn't work)
+// $client->debug(); // to enable debug mode and show the errors
+// $client->execute(); // request to api, show the output and continue
+$client->executeAndBreak(); // to stop page execution if there is redirect or some output
+?>
+
 <!doctype html>
 <html>
 
@@ -28,7 +44,7 @@
 
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
+  <link href="css/main.css?ver=2" rel="stylesheet">
 </head>
 
 <body>
